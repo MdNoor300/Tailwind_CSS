@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skills - a web page development class</title>
     <link rel="stylesheet" href="./style.css" />
-</head>
-<body class="bg-slate-950">
+  </head>
+  <body class="bg-slate-950">
     <!-- navbar goes here -->
-     <nav class="w-full h-14 bg-indigo-200 flex justify-between
-      px-4 items-center md:px-4">
-        <div class="text-2xl text-indigo-700 font-bold">Skills</div>
-        <ul class="md:flex">
-            <li>Home</li>
-            <li>About us</li>
-            <li>Contact us</li>
-        </ul>
-        <div>Login/Signup</div>
-     </nav>
-</body>
+    <nav
+      class="w-full h-14 bg-indigo-200 flex justify-between px-4 items-center md:px-4"
+    >
+      <div class="text-2xl text-indigo-700 font-bold">Skills</div>
+      <ul class="md:flex hidden font-semibold">
+        <li class="mx-[10px] cursor-pointer">About us</li>
+        <li class="mx-[10px] cursor-pointer">Contact us</li>
+        <li class="mx-[10px] cursor-pointer">Home</li>
+      </ul>
+      <div
+        class="hidden md:block px-2 py-2 bg-indigo-700 text-white rounded font-bold cursor-pointer"
+      >
+        Login/Signup
+      </div>
+      <div class="md:hidden text-indigo-600">
+        <a class="text-4xl" href="#">&#8801;</a>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <header class="w-full h-auto">
+        <img class="w-full hidden md:block" src="https://cdn.pwskills.com/assets/uploads/banners/63a18cca807628f5968f528a/mobile.jpg" alt="">
+        <img class="w-full lg:hidden" src="https://cdn.pwskills.com/assets/uploads/banners/63a18cca807628f5968f528a/web.jpg" alt="">
+    </header>
+  </body>
 </html>
